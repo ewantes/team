@@ -6891,6 +6891,11 @@ button.close {
   color: #efeed5;
   outline: none;
 }
+.container-for-header {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
 .top-left-header {
   height: 100%;
   font-family: "PTSansCaptionRegular";
@@ -6909,7 +6914,7 @@ button.close {
   right: 28.5%;
   top: 13%;
 }
-.hexagon {
+.hexagon-lang {
   position: absolute;
   width: 54px;
   height: 31.18px;
@@ -6918,19 +6923,35 @@ button.close {
   min-width: auto;
   border: 0;
 }
-.hexagon li {
+.hexagon-lang li {
   color: #1c5281;
 }
-.hexagon li:hover {
+.hexagon-lang li:hover {
   background-color: #fde127;
 }
-.hexagon li a {
+.hexagon-lang li a {
   padding: 2px 19px;
 }
-.hexagon li a:hover {
+.hexagon-lang li a:hover {
   background-color: #fde127;
 }
-
+.hexagon-lang:before,
+.hexagon-lang:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 27px solid transparent;
+  border-right: 27px solid transparent;
+}
+.hexagon-lang:before {
+  bottom: 100%;
+  border-bottom: 15.59px solid #fde127;
+}
+.hexagon-lang:after {
+  top: 100%;
+  width: 0;
+  border-top: 15.59px solid #fde127;
+}
 #ddmenu .hexagonq {
   z-index: 30000;
   position: absolute;
