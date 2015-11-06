@@ -301,3 +301,8 @@
       height: 100%;
       width: 100%;
     }
+
+.style-pils li{
+  list-style: none !important;
+  list-style-image: url(../img/Ellipse.png) !important;
+}

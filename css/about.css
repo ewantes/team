@@ -7648,7 +7648,18 @@ footer {
   background-position: center;
   position: relative;
 }
-.footer-maps:before {
+#map-canvas {
+  width: 100%;
+  min-height: 178px;
+}
+.overlay {
+  width: 100%;
+  min-height: 178px;
+  background-position: center;
+  position: absolute;
+  z-index: 5;
+}
+.overlay:before {
   content: '';
   width: 100%;
   height: 100%;
